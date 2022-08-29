@@ -6,7 +6,7 @@ Por causa do lançamento do album da copa do mundo de 2022,
 houve um grande aumento na demanda por figurinhas.
 Pensando nisso e na falta de aplicativos eficientes na area,
 nosso grupo pensou em desenvolver um software que facilite tanto a troca como a venda de figurinhas.
-Utilizando de Métodos ágeis aprendidos durante o curso, como SCRUM e nosso quadro Kanban no `Jira`_.
+Utilizando de Métodos ágeis aprendidos durante o curso, usaremos SCRUM e nosso quadro Kanban no `Jira`_.
 Iremos utilizar Python, HTML/CSS, SQLite, JavaScript
 
 .. _Jira: https://vppm.atlassian.net/jira/software/projects/PROJFDS/boards/4
