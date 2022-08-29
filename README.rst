@@ -12,7 +12,7 @@ Iremos utilizar Python, HTML/CSS, SQLite, JavaScript
 .. _Jira: https://vppm.atlassian.net/jira/software/projects/PROJFDS/boards/4
 
 
-Tem
+Time
 ------
 
 José Eduardo Silva de Azevedo - `Eduardo`_
