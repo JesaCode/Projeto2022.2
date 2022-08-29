@@ -15,7 +15,7 @@ Iremos utilizar Python, HTML/CSS, SQLite, JavaScript
 Time
 ------
 
-`José Eduardo Silva de Azevedo`
+`José Eduardo Silva de Azevedo`_
 
 `Lucas Lustosa Siqueira Emery`_
 `Thiago Menezes Belo`_
