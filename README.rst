@@ -18,9 +18,13 @@ Time
 `José Eduardo Silva de Azevedo`_
 
 `Lucas Lustosa Siqueira Emery`_
+
 `Thiago Menezes Belo`_
+
 `Marcelo Cavalcanti de Melo`_
+
 `Victor Pereira Pinto de Melo`_
+
 `Pedro Tojal de Medeiros`_
 
 .. _eduardo: https://github.com/JesaCode
