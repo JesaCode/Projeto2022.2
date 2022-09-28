@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'cadastro/css/stylecadastro.css' %}">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <h1>Gestor de Figurinha</h1>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastro</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="nome" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="number" name="number" id="number" class="inputUser" required>
+                    <label for="number" class="labelInput">Figurinhas que faltam</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="password" name="password" id="password" class="inputUser" required>
+                    <label for="senha" class="labelInput">Senha</label>
+                </div>
+                <br><br>
+                <button type="submit" id="submit">Criar conta</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
