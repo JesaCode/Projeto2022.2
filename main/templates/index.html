@@ -1,0 +1,157 @@
+{% extends 'public_template.html' %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block main %}
+<div class="container" id="banner">
+    <img src="/static\img\16.png" class="img-fluid" alt="banner">
+</div>
+
+
+
+<div class="container">
+    <div class="row" if="categories">
+        <h1>Trocas</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="Mouse">
+                <div class="card-body">
+                    <h5 class="card-title">Mouses</h5>
+                    <p class="card-text">New and uses mouses</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="Mouse">
+                <div class="card-body">
+                    <h5 class="card-title">Mouses</h5>
+                    <p class="card-text">New and uses mouses</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="Mouse">
+                <div class="card-body">
+                    <h5 class="card-title">Mouses</h5>
+                    <p class="card-text">New and uses mouses</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="b-example-divider"></div>
+
+<div class="container">
+    <div class="row">
+        <h1>Figurinhas</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <a href="#">
+                    <img src="" class="card-img-top" alt="Teclado Novo">
+                </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Teclado Novo</h5>
+                    <p class="card-text">Semi novo, usado por 2 meses, vendendo para arrecadar dinheiro.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Semi New/li>
+                    <li class="list-group-item">R$ 200,00</li>
+                    <li class="list-group-item">PIX</li>
+                </ul>
+                <div class="card-body">
+                    <a href="" class="card-link">Product link</a>
+                    <a href="" class="card-link">Add Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="Mouse novo">
+                <div class="card-body">
+                    <h5 class="card-title">Mouse Novo</h5>
+                    <p class="card-text">COmpre agora esse mouse novo com descnto.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">New</li>
+                    <li class="list-group-item">R$ 300,00</li>
+                    <li class="list-group-item">Pix</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Product link</a>
+                    <a href="#" class="card-link">Add Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="b-example-divider"></div>
+
+<div class="container" id="footer">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <img src="static/img/SSPnoback.png" alt="" width="40" height="32" class="bi me-2">
+        </a>
+        
+        <p class="text-muted">© 2022</p>
+      </div>
+  
+      <div class="col mb-3">
+  
+      </div>
+  
+      <div class="col mb-2">
+        <h5>Menu site</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Trocas</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Figurinhas</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Perfil</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQ</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-2">
+        <h5>Trocas</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Principais</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Proximo a mim</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Todas</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pesquisa</a></li>
+        
+        </ul>
+      </div>
+    </footer>
+  </div>
+{% endblock %}
