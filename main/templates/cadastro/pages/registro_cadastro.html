@@ -1,0 +1,47 @@
+{% extends 'public_template.html' %}
+
+{% block title %}Registro{% endblock title %}
+
+
+{% block main %}
+<div class="main-content center container">
+  <h2>Registro</h2>
+</div>
+
+<div class="main-content container">
+  <form method=" POST " action="{% url 'main:criado' %}">
+    {% csrf_token %}
+
+    <div class="form-content form-content-grid">
+      {% for field in form %}
+        <div class="form-group">
+          <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+          {{ field }}
+
+          {% if field.help_text %}
+            <p class="help_text"> {{ field.help_text }}</p>
+          {% endif %}
+
+          {{ field.errors }}
+        </div>
+      {% endfor %}
+    </div>
+    {% if form.errors %}
+      <div class="form-content form-content-grid">
+        <div class="form-group">
+          <div class="message message-error">
+            Tem erros no formulario, corrija por favor e mande novamente.
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <br>
+    <div class="form-content form-content-grid">
+      <div class="form-group">
+        <button type="submit">Send</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endblock main %}

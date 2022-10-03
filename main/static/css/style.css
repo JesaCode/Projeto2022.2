@@ -1,22 +1,66 @@
 body {
-    background-color: #A6223B;
+   background-color: #A6223B;
 }
 
 #banner {
-    max-width: 100%;
-    flex-wrap: wrap;
-    padding-left: 0%;
-    padding-right: 0%;
- }
+   max-width: 100%;
+   flex-wrap: wrap;
+   padding-left: 0%;
+   padding-right: 0%;
+}
 
- #categories {
-    margin-top: 50px;
- }
+#categories {
+   margin-top: 50px;
+}
 
- #footer {
-    background-color: #ede9e7;
-    max-width: 100%;
-    flex-wrap: wrap;
-    padding-left: 0%;
-    padding-right: 0%;
- }
+#footer {
+   background-color: #ede9e7;
+   max-width: 100%;
+   flex-wrap: wrap;
+   padding-left: 0%;
+   padding-right: 0%;
+}
+
+.form-content {
+   max-width: 58rem;
+   margin: 0 auto;
+   margin-bottom: var(-- spacing-gutter-medium);
+}
+
+.form-content label,
+.form-content .help-text,
+.errorlist {
+ display: block;
+ margin: 0.2rem 0;
+ font-size: 1.2rem;
+ list-style-type: none;
+}
+
+.form-content input,
+.form-content textarea,
+.form-content select {
+ width: 100%;
+ padding: 0.9rem;
+ border-radius: 0.4rem;
+ border: 1px solid var(--color-primary-dark);
+}
+
+.form-content-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+ gap: calc(var(--spacing-gutter-medium) / 2) var(--spacing-gutter-medium);
+}
+
+.form-content button {
+ padding: 10px 20px;
+ border: none;
+ background: white;
+ color: var(--color-white);
+ border-radius: 8px;
+ text-align: center; 
+ width: 72.6vw;
+}
+
+.main-content h2{
+   margin-top: 25px;
+}
