@@ -3,15 +3,19 @@ body {
 }
 
 #banner {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding-left: 0%;
+    padding-right: 0%;
+ }
+
+#figurinhas {
    max-width: 100%;
    flex-wrap: wrap;
    padding-left: 0%;
    padding-right: 0%;
 }
 
-#categories {
-   margin-top: 50px;
-}
 
 #footer {
    background-color: #ede9e7;
@@ -20,7 +24,6 @@ body {
    padding-left: 0%;
    padding-right: 0%;
 }
-
 .form-content {
    max-width: 58rem;
    margin: 0 auto;
