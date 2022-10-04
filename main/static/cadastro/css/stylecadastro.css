@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://www.365scores.com/pt-br/news/magazine/wp-content/uploads/2021/10/GettyImages-1245946201-780x470.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 15px;
+  width: 50%;
+}
+
+fieldset {
+  border: 3px solid rgb(248, 238, 227);
+  width: 95%;
+  border-radius: 8px;
+}
+
+legend {
+  border: 1px solid rgb(248, 238, 227);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(248, 238, 227);
+  border-radius: 8px;
+  color: rgb(59, 2, 32);
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(248, 238, 227);
+  outline: none;
+  color: rgb(248, 238, 227);
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+  top: -20px;
+  font-size: 12px;
+  color: rgb(248, 238, 227);
+}
+
+#submit {
+  background-image: linear-gradient(to right, rgb(248, 238, 227), rgb(248, 238, 227));
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  color: rgb(59, 2, 32);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-image: linear-gradient(to right, rgb(248, 238, 227), rgb(201, 201, 201));
+}
+
+h1 {
+  text-align: center;
+  color: rgb(248, 238, 227);
+
+}
