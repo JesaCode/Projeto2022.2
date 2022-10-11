@@ -27,12 +27,17 @@ Time
 
 `Pedro Tojal de Medeiros`_
 
+`Williams Ferreira`_
+
+
+
 .. _eduardo: https://github.com/JesaCode
 .. _Lucas: https://github.com/lucasemery1
 .. _Thiago: https://github.com/thiagombelo
 .. _Marcelo: https://github.com/celocavalcanti
 .. _Victor: https://github.com/victormelo1
 .. _Pedro: https://github.com/ptojal
+.. _Williams: https://github.com/ferreirawilliams
 
 
 Links
@@ -41,3 +46,4 @@ Links
 -   Jira: https://vppm.atlassian.net/jira/software/projects/PROJFDS/boards/4
 -   Source Code: https://github.com/JesaCode/Projeto2022.2
 -   Chat: https://discord.gg/azHF8f3h
+-   Figma: https://www.figma.com/file/dFbuNCxU5xedYpvc853gI0/figurinhas?node-id=33%3A1042
