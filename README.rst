@@ -15,23 +15,23 @@ Iremos utilizar Python, HTML/CSS, SQLite, JavaScript
 Time
 ------
 
-`José Eduardo Silva de Azevedo`_
+José  `Eduardo`_  Silva de Azevedo
 
-`Lucas Lustosa Siqueira Emery`_
+`Lucas`_  Lustosa Siqueira Emery
 
-`Thiago Menezes Belo`_
+`Thiago`_  Menezes Belo
 
-`Marcelo Cavalcanti de Melo`_
+`Marcelo`_  Cavalcanti de Melo
 
-`Victor Pereira Pinto de Melo`_
+`Victor`_  Pereira Pinto de Melo
 
-`Pedro Tojal de Medeiros`_
+`Pedro`_  Tojal de Medeiros
 
-`Williams Ferreira`_
+`Williams`_  Ferreira
 
 
 
-.. _eduardo: https://github.com/JesaCode
+.. _Eduardo: https://github.com/JesaCode
 .. _Lucas: https://github.com/lucasemery1
 .. _Thiago: https://github.com/thiagombelo
 .. _Marcelo: https://github.com/celocavalcanti
