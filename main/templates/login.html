@@ -1,15 +1,15 @@
 {% extends 'public_template.html' %}
 {% load static %}
 
-{% block title %}Cadastro{% endblock title %}
+{% block title %}Login{% endblock title %}
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '\css\stylecadastro.css' %}">
 </head>
+
 {% block main %}
 <style>
     body {
@@ -31,17 +31,18 @@
         background-color: rgba(0, 0, 0, 0.5);
         padding: 15px;
         border-radius: 15px;
-        width: 50%;
+        width: 40%;
     } 
 
     legend {
         border: -1px solid rgb(248, 238, 227);
         padding: 2px;
         text-align: center;
+        font-size: 20px;
         background-color: rgb(248, 238, 227);
         border-radius: 7px;
         color: rgb(59, 2, 32);
-        width: 50%;
+        width: 30%;
     }
 
     .inputBox {
@@ -76,7 +77,7 @@
 
     #submit {
         background-image: linear-gradient(to right, rgb(248, 238, 227), rgb(248, 238, 227));
-        width: 50%;
+        width: 30%;
         border-radius: 8px;
         border: none;
         padding: 7px;
@@ -94,60 +95,29 @@
         color: rgb(248, 238, 227);
       
     }
-    
 </style>
 <body>  
     <div class="box">
-        <form action="{% url 'main:registro' %}" method="POST">
+        <form action="" method="POST">
             {% csrf_token %}
             <fieldset>
-                <legend><b>Cadastro</b></legend>
+                <legend><b>Login</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" value= "{{nome}}" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
-                </div>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="usuarioSistema" id="usuarioSistema" class="inputUser" value= "{{usuarioSistema}}" required>
-                    <label for="usuarioSistema" class="labelInput">Usuario</label>
-                </div>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" value= "{{email}}" required>
+                    <input type="text" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">Email</label>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" value= "{{cidade}}" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
-                </div>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser" value= "{{estado}}" required>
-                    <label for="estado" class="labelInput">Estado</label>
-                </div>
-                <br>
-                <div class="inputBox">
-                    <input type="number" name="figurinhas" id="number" class="inputUser" required>
-                    <label for="figurinhas" class="labelInput">Figurinhas que faltam</label>
-                </div>
-                <br>
-                <div class="inputBox">
-                    <input type="password" name="senha" id="password" class="inputUser" value= "{{senha}}" required>
+                    <input type="password" name="senha" id="password" class="inputUser" required>
                     <label for="senha" class="labelInput">Senha</label>
                 </div>
-                <br>
-                <div class="inputBox">
-                    <input type="password" name="confirmarSenha" id="password" class="inputUser" value= "{{confirmarSenha}}" required>
-                    <label for="confirmarSenha" class="labelInput"> Confirmar senha</label>
-                </div>
-                <br>
-                <button type="submit" id="submit">Criar conta</button>
+                <br><br>
+                <button type="submit" id="submit">Entrar</button>
             </fieldset>
         </form>
     </div>
 </body>
+{% endblock main %}
 
 </html>
-{% endblock main %}
