@@ -95,13 +95,20 @@
         color: rgb(248, 238, 227);
       
     }
+
+    fieldset {
+        align-items: center;
+    }
+
+
 </style>
 <body>  
     <div class="box">
         <form action="" method="POST">
             {% csrf_token %}
-            <fieldset>
-                <legend><b>Login</b></legend>
+            <fieldset style="text-align:center;">
+                <legend style="margin-bottom: 24px;
+                margin-left: 74px;"><b>Login</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="email" id="email" class="inputUser" required>
@@ -113,7 +120,7 @@
                     <label for="senha" class="labelInput">Senha</label>
                 </div>
                 <br><br>
-                <button type="submit" id="submit">Entrar</button>
+                <button type="submit" id="submit" >Entrar</button>
             </fieldset>
         </form>
     </div>
