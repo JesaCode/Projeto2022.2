@@ -26,7 +26,6 @@ def registro_cadastro(request):
         return render(request, 'cadastro/cadastro.html')
     elif request.method == "POST":
         nome = request.POST.get('nome')
-        usuarioSistema = request.POST.get('usuarioSistema')
         email = request.POST.get('email')
         cidade = request.POST.get('cidade')
         estado = request.POST.get('estado')
@@ -37,21 +36,20 @@ def registro_cadastro(request):
 
         if usuario.exists():
             return render(request, 'cadastro/cadastro.html', {
-                'nome': nome, 'usuarioSistema': usuarioSistema,
+                'nome': nome,
                 'cidade': cidade, 'estado': estado,
                 'senha': senha, 'confirmarSenha': confirmarSenha
             })
 
         if not re.fullmatch(re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+'), email):
             return render(request, 'cadastro/cadastro.html', {
-                'nome': nome, 'usuarioSistema': usuarioSistema,
+                'nome': nome,
                 'cidade': cidade, 'estado': estado,
                 'senha': senha, 'confirmarSenha': confirmarSenha
             })
 
         usuario = Usuario(
             nome=nome,
-            usuarioSistema=usuarioSistema,
             email=email,
             cidade=cidade,
             estado=estado,

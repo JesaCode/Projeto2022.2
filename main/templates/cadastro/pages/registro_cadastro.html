@@ -9,11 +9,11 @@
 </div>
 
 <div class="main-content container">
-  <form method=" POST " action="">
+  <form method=" POST " action="{% url 'main:registro' %}">
     {% csrf_token %}
 
     <div class="form-content form-content-grid">
-      {% for field in form %}
+      {% for field in form %} 
         <div class="form-group">
           <label for="{{ field.id_for_label }}">{{ field.label }}</label>
           {{ field }}

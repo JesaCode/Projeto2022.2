@@ -36,7 +36,6 @@ class Figurinha(models.Model):
 
 
 class Usuario(models.Model):
-    usuarioSistema = models.CharField(max_length=30)
     nome = models.CharField(max_length=50)
     email = models.EmailField(max_length=30)
     cidade = models.CharField(max_length=30)
