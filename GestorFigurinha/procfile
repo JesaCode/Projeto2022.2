@@ -1,1 +1,2 @@
-web gunicorn mysite.wsgi:apllication --log-file -
+release: python manage.py migrate
+web: gunicorn GestorFigurinhas.wsgi
