@@ -1,8 +1,12 @@
+from dataclasses import field
 import re
+from tkinter.ttk import Widget
 
 from django import forms
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
+
+from main.models import Troca
 
 # from .models import *
 
@@ -13,7 +17,19 @@ def senha_forte(password):
     if not regex.match(password):
         raise ValidationError()
 
-
+class formTroca(forms.ModelForm):
+    class Meta:
+        model = Troca
+        fields = ('darFigurinhas', 'recebeFigurinhas', 'valor', 'descricao', 'ativa')
+        exclude = ()
+        
+        widgets = {
+            #'autor': forms.TextInput(attrs={'class': 'form-control', 'autofocus': ''}),
+            'darFigurinhas': forms.TextInput(attrs={'class':'form-control'}),
+            'recebeFigurinhas': forms.TextInput(attrs={'class':'form-control'}),
+            'valor': forms.NumberInput(attrs={'class':'form-control'}),
+            'descricao': forms.TextInput(attrs={'class':'form-control'})
+        }
 class formRegistro(forms.ModelForm):
     cidade = forms.CharField(
         required=True,

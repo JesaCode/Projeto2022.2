@@ -1,0 +1,62 @@
+{% extends 'public_template.html' %}
+
+
+{% block title %}Trocas{% endblock %}
+
+{% block main %}
+    <div class="card">
+        <div class="card-body">
+            <h4>TROCAS</h4>
+            <hr>
+            <a class="btn btn-success" href="/trocas/add">Criar</a>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Autor</th>
+                        <th>DarFigurinhas</th>
+                        <th>RecebeFigurinhas</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                        <th>Ativa?</th>
+                        <th>Criado em:</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for troca in trocas %}
+                    <tr>
+                        <td>{{ troca.id }}</td>
+                        <td>{{ troca.autor }}</td>
+                        <td>{{ troca.darFigurinhas }}</td>
+                        <td>{{ troca.recebeFigurinhas }}</td>
+                        <td>{{ troca.valor }}</td>
+                        <td>{{ troca.descricao }}</td>
+                        <td>{{ troca.ativa }}</td>
+                        <td>{{ troca.created_at }}</td>
+                        <td>
+                            <button class="btn btn-warning" href="{% url 'main:trocas_edit' troca.id %}">Editar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <td>Autor 03</td>
+                    <td>01-COL 1 10-BRS 11</td>
+                    <td>2-BRS 1</td>
+                    <td>10</td>
+                    <td>Aceito propostas</td>
+                    <td>SIM</td>
+                    <td>21/10/2022</td>
+                    <td>
+                        <button class="btn btn-warning">Editar</button>
+                        <button class="btn btn-danger">Excluir</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+{% endblock %}
