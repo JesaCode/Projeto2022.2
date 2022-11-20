@@ -66,10 +66,13 @@ Como você pode ajudar no Projeto?
 - Até chegar no "cd Projeto2022.2", que é o nome da pasta desse projeto.
 
 
-- Nisso, no terminal, colocar o comando "python -m venv .venv", para criar o ambiente virtual.
+- Nisso, no terminal, colocar o comando "pip install virtualenv", para criar o ambiente virtual.
 
 
-- Ativar o ambiente virtual com ".venv/scripts/activate (caso seja windows)", senao, ".venv/bin/activate (caso seja mac)".
+- Após isso, colocar "virtualenv venv". 
+
+
+- Ativar o ambiente virtual com ".venv/scripts/activate (caso seja windows)", senao, ".venv/bin/activate (caso seja mac ou linux)".
 
 
 - Dar um "python -m pip install -r requirements.txt", para instalar o que é usado no projeto.
