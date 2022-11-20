@@ -81,6 +81,8 @@ Como você pode ajudar no Projeto?
 - Quando quiser visualizar o server, usar o comando "python manage.py runserver".
 
 2º Passo - Modificações:
+
+
 - Caso queira fazer alguma atualização no projeto, utilize os seguintes comandos (no terminal) após ter implementado em sua pasta no seu computador:
     - "git status" ---> checar se possui alguma atualização para mandar pro Github.
     - "git add ."  ---> para selecionar essas modificações.
