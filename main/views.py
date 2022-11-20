@@ -3,10 +3,10 @@
 import re
 
 from django.http import HttpResponse
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect, render
 
-from .models import Usuario, Troca
 from .forms import formTroca
+from .models import Troca, Usuario
 
 # from .models import Usuario
 
@@ -22,52 +22,47 @@ def login(request):
     return render(request, 'login.html')
 
 
-
-
 def trocas(request):
     trocas = Troca.objects.all()
-    
+
     context = {
         'trocas': trocas
-                
+
     }
-    return render(request,'trocas.html', context)
+    return render(request, 'trocas.html', context)
+
 
 def trocas_add(request):
     form = formTroca(request.POST or None)
-    
+
     if request.POST:
         if form.is_valid():
             form.save()
             return redirect('/trocas')
-    
 
-            
     context = {
         'form': form
     }
-    
+
     return render(request, 'troca_add.html', context)
+
 
 def trocas_edit(request, troca_pk):
     troca = Troca.objects.get(pk=troca_pk)
-    
+
     form = formTroca(request.POST or None, instance=troca)
-    
+
     if request.POST:
         if form.is_valid():
             form.save()
             return redirect('trocas')
-        
+
     context = {
         'form': form
     }
-                
+
     return render(request, 'trocas_edit.html', context)
-    
-    
-    
-    
+
 
 def registro_cadastro(request):
     if request.method == "GET":
@@ -109,7 +104,7 @@ def registro_cadastro(request):
 
         usuario.save()
 
-        return HttpResponse('teste')
+        return render(request, 'login.html')
 
         # def registro_criado(request):
         #     if request.method == "POST":

@@ -47,3 +47,24 @@ Links
 -   Source Code: https://github.com/JesaCode/Projeto2022.2
 -   Chat: https://discord.gg/azHF8f3h
 -   Figma: https://www.figma.com/file/dFbuNCxU5xedYpvc853gI0/figurinhas?node-id=33%3A1042
+
+
+Como você pode ajudar no Projeto?
+---------------------------------
+1º Passo - Ambiente virtual:
+- Criar uma pasta para o Projeto.
+- Dar "git clone" com o link do repositório. (https://github.com/JesaCode/Projeto2022.2.git).
+- Ir no terminal e entrar na pasta criada, com o comando "cd <nome_pasta>", fazendo o passo a passo de onde ela se encontra.
+- Até chegar no "cd Projeto2022.2", que é o nome da pasta desse projeto.
+- Nisso, no terminal, colocar o comando "python -m venv .venv", para criar o ambiente virtual.
+- Ativar o ambiente virtual com ".venv/scripts/activate (caso seja windows)", senao, ".venv/bin/activate (caso seja mac)".
+- Dar um "python -m pip install -r requirements.txt", para instalar o que é usado no projeto.
+- Dar um "python -m pip install --upgrade pip", para atualizar o pip.
+- Quando quiser visualizar o server, usar o comando "python manage.py runserver".
+
+2º Passo - Modificações:
+- Caso queira fazer alguma atualização no projeto, utilize os seguintes comandos (no terminal) após ter implementado em sua pasta no seu computador:
+    - "git status" ---> checar se possui alguma atualização para mandar pro Github.
+    - "git add ."  ---> para selecionar essas modificações.
+    - "git commit - m "(alguma mensagem)" " ---> para enviar as modificações para o Github com sua mensagem.
+    - "git push -u origin (Nome da branch utilizada)" ---> para confirmar o envio para o Github.
